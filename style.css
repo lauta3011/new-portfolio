@@ -184,40 +184,37 @@ p,a{
 .work{
     display:inline-block;
     overflow: hidden;
-    background-color: #b1b3b5;
     border-radius: 5px;
     opacity:0.7;
     height: 55%;
     margin-left: 5%;
     margin-top: 5%;
-    padding: 0px !important;
+    padding: 0 !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+    box-shadow: inset 0px 0px 70px rgba(0,0,0,0.9);
 }
 
-.work img{
-    height:70%;
-    width: 80%;
-    padding:20px;
-    border-radius: 5px;
+.work:hover{
+    box-shadow: inset 0px -100px 70px rgba(0,0,0,0.9);
 }
 
 .info{
-    padding-top:112%;
     width: 100%;
     height: 100%;
     position: relative;
-    bottom:  93%;
     transition: 1s;
 }
 
 .info:hover{
     opacity: 0.9;
-    bottom:170%;
 }
 
 .info div{
-    background-color: #575965;
-    padding-bottom: 50%;
     color: #ededed;
+    padding-top: 50%;
 }
 
 .info p{
@@ -304,8 +301,11 @@ footer img:hover{
     .work h3{
         font-size: 60px;
     }
-    .info:hover{
-        bottom:110%;
+    .info div:hover{
+        padding-top:25%;
+    }
+    .info div p{
+        font-size: 30px;
     }
     footer p,a{
         font-size: 40px;
