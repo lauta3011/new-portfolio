@@ -12,16 +12,15 @@ window.addEventListener('scroll', function() {
         document.querySelector('#about-me img').classList.add('enter-right');
         aboutMeAnim =true;
     }else if(scrollPos > 1100 && !skillsAnim){
-//        document.querySelector('.chart').classList.add('enter-left');
         document.querySelector('#skills').classList.add('enter-left');
         for(i =0; i< 6;i++){
             document.querySelector('.full-bar .null').classList.add('line');
             document.querySelector('.full-bar .null').classList.remove('null');
         }
         skillsAnim=true;
-    }else if(scrollPos > 2200 && !myWorksAnim){
+    }else if(scrollPos > 2000 && !myWorksAnim){
         document.querySelector('#works h1').classList.add('enter-left');
-        document.querySelector('#works div').classList.add('enter-right');
+        document.querySelector('#works div').classList.add('enter-left');
         myWorksAnim=true;
     }
 });
